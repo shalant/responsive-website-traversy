@@ -34,7 +34,17 @@
 }
 
 /* Backgrounds & colored buttons */
-.bg-primary, .btn-primary {
+.bg-primary a, 
+.btn-primary a,
+.bg-secondary a, 
+.btn-secondary a,
+.bg-dark a, 
+.btn-dark a {
+    color: #fff;
+}
+
+.bg-primary, 
+.btn-primary {
     background-color: var(--primary-color);
     color: #fff;
 }
@@ -49,18 +59,26 @@
     color: #fff;
 }
 
-.bg-primary a, 
-.btn-primary a,
-.bg-secondary a, 
-.btn-secondary a,
-.bg-dark a, 
-.btn-dark a {
-    color: #fff;
-}
-
 .bg-light, .btn-light {
     background-color: var(--light-color);
     color: #333;
+}
+
+/* Text colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.text-dark {
+    color: var(--dark-color);
+}
+
+.text-light {
+    color: var(--light-color);
 }
 
 /* Text sizes */
@@ -86,6 +104,30 @@
 
 .text-center {
     text-align: center;
+}
+
+/* Alert */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.alert i {
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: #fff;
+    margin-right: 10px;;
+}
+
+.alert-error {
+    background-color: var(--error-color);
+    color: #fff;
 }
 
 .flex {
@@ -151,41 +193,41 @@
 
 /* Padding */
 .py-1 {
-    margin: 1rem 0;
+    padding: 1rem 0;
 }
 
 .py-2 {
-    margin: 1.5rem 0;
+    padding: 1.5rem 0;
 }
 
 .py-3 {
-    margin: 2rem 0;
+    padding: 2rem 0;
 }
 
 .py-4 {
-    margin: 3rem 0;
+    padding: 3rem 0;
 }
 
 .py-5 {
-    margin: 4rem 0;
+    padding: 4rem 0;
 }
 
 .p-1 {
-    margin: 1rem;
+    padding: 1rem;
 }
 
 .p-2 {
-    margin: 1.5rem;
+    padding: 1.5rem;
 }
 
 .p-3 {
-    margin: 2rem;
+    padding: 2rem;
 }
 
 .p-4 {
-    margin: 3rem;
+    padding: 3rem;
 }
 
 .p-5 {
-    margin: 4rem;
+    padding: 4rem;
 }
